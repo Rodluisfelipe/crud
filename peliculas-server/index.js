@@ -9,7 +9,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost:27017/peliculas', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://127.0.0.1:27017/peliculas', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const Pelicula = mongoose.model('Pelicula', {
   titulo: String,
